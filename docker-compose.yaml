@@ -11,7 +11,8 @@ services:
     volumes:
       # local ./ directory contains PHP code
       # Mount it to the to /var/www/html on the container
-      - ./:/var/www/html
+      - ./course-php:/var/www/html
+      - ./config/php:/usr/local/etc/
     depends_on:
       # Ensure MySQL is started before PHP
       - database-container
