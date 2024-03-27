@@ -13,3 +13,7 @@
 - `cos(number)`: returns the cosine of a number
 - `tan(number)`: returns the tangent of a number
 - `sqrt(number)`: returns the square root of a number
+
+- `rand()`: generates a random number. But is a slow function.
+- `mt_rand(min, max)`: generates a random number too, but more efficiently.
+- `random_int(min, max)`: generates a random number, but criptographically secure. But is the slowest function.
