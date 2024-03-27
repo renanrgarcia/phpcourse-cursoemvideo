@@ -12,7 +12,7 @@ services:
       # local ./ directory contains PHP code
       # Mount it to the to /var/www/html on the container
       - ./course-php:/var/www/html
-      - ./config/php:/usr/local/etc/
+      - ./config/php/:/usr/local/etc/php
     depends_on:
       # Ensure MySQL is started before PHP
       - database-container

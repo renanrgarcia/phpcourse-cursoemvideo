@@ -25,10 +25,10 @@
 
         $brls = numfmt_format_currency($pattern, $brls, "BRL");
         $dollars = numfmt_format_currency($pattern, $dollars, "USD");
-        
+        $quotation = numfmt_format_currency($pattern, $quotation, "BRL");
 
-        echo "Your R$ $brls is equal to <strong>US\$$dollars</strong> <br>";
-        echo "<strong>*The fix quotation is R\$$quotation </strong> informed directly from the code. <br>";
+        echo "Your $brls is equal to <strong>$dollars</strong> <br>";
+        echo "<strong>*The fix quotation is $quotation </strong> informed directly from the code. <br>";
       ?>
     </p>
     <button onclick="javascript:history.go(-1)">&#x2B05 Back</a></button>
