@@ -9,7 +9,7 @@
 <body>
     
   <main>
-    <h1>Currency converter v1.0</h1>
+    <h1>Currency converter v2.0</h1>
     <p>
       <?php 
         $start = date('m-d-Y', strtotime('-7 days'));
