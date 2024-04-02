@@ -12,18 +12,19 @@
     <h1>Real number analyser</h1>
     <p>
       <?php 
-        $number = $_GET["number"] ?? 0;
+        $number = $_POST["number"] ?? 0;
         
-        $number_int = number_format($number, 0, ",", ".");
-        $number_dec = floatval($number);
+        $number_int = (int) $number;
+        $number_dec = $number - $number_int;
 
-        echo "Analysing the number <strong>$number</strong> informed by the user:  <br>";
+        echo "Analysing the number <strong>" . number_format($number, 3, ".", ",") . "</strong> informed by the user:  <br>";
         echo "<ul>
-        <li>The integer part of the number is $number_int </li>
-        </ul>*Quotation directly obtained from the website of the <strong>Central Bank of Brazil</strong> <br>";
+        <li>The integer part of the number is <strong>" . number_format($number_int, 0, ".", ",") . "</strong> </li>
+        <li>The decimal part of the number is <strong>" . number_format($number_dec, 3, ".", ",") . "</strong> </li>
+        </ul>";
       ?>
     </p>
-    <button onclick="javascript:history.go(-1)">&#x2B05 Back</a></button>
+    <button onclick="javascript:history.go(-1)">Back</a></button>
   </main>
 </body>
 </html>

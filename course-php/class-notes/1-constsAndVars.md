@@ -29,7 +29,7 @@
       private string $name;
     }
     $p = new Person;
-    `var_dump($p)
+    var_dump($p)
   </code>
 
 ## Special
