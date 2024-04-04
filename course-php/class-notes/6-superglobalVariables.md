@@ -1,4 +1,12 @@
 # Superglobal Variables
 - $_GET: generates an associative array of variables passed through the URL parameters (aka. query string)
+  - Only receives data from the URL
 - $_POST: get data from a form using POST method
+  - Only receives data from the payload of the request
 - $_REQUEST: $_GET + $_POST (All three generates an associative array)
+- $_COOKIES: get data from a cookie of your PHP application
+- $_FILES: get data from a file upload
+- $_SESSION: get data from the session
+- $_ENV: get data from the environment
+- $_SERVER: get data from the server
+- $GLOBALS: get data from the global scope (All other superglobals in one array)
