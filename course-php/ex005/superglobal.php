@@ -10,6 +10,20 @@
   <main>
     <pre>
       <?php 
+        echo "<h1>Superglobal GET</h1>";
+        print_r($_GET);
+        echo "<br>";
+        var_dump($_GET);
+
+        echo "<h1>Superglobal POST</h1>";
+        print_r($_POST);
+        echo "<br>";
+        var_dump($_POST);
+
+        echo "<h1>Superglobal REQUEST</h1>";
+        print_r($_REQUEST);
+        echo "<br>";
+        var_dump($_REQUEST);
         
       ?>
     </pre>
