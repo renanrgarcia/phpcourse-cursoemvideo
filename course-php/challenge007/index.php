@@ -23,8 +23,8 @@
   <section>
     <h2>Final result</h2>
     <?php 
-      $intminwages = intdiv($sallary, $minwage);
-      $rest = $sallary % $minwage;
+      $intminwages = intdiv(100*$sallary, 100*$minwage);
+      $rest = ($sallary*100) % ($minwage*100) / 100;
 
       echo "Who receives a sallary of \$" . number_format($sallary, 2, '.', ',') . " receives <strong>" . $intminwages . " minimum wages</strong> + \$" . number_format($rest, 2, '.', ',') . "."
     ?>
