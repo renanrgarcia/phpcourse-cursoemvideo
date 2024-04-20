@@ -13,7 +13,7 @@
     $present_year = date("Y");
   ?>
   <main>
-    <h1>Arithmetic average</h1>
+    <h1>Age</h1>
     <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
       <label for="birth_year">What is your year of birth?</label>
       <input type="number" name="birth_year" id="birth_year" max="<?=$present_year?>" value="<?=$birth_year?>" required>
