@@ -12,7 +12,7 @@
     $adjustment = $_GET['adjustment'] ?? 0;
   ?>
   <main>
-    <h1>Arithmetic average</h1>
+    <h1>Price Adjustment</h1>
     <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
       <label for="price">Product price ($)</label>
       <input type="number" name="price" id="price" min="0.10" step="0.01" value="<?=$price?>" value="<?=$price?>" required>
